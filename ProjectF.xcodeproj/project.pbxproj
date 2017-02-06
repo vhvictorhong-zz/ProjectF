@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		1567521F6946B7B2864D8031 /* Pods_ProjectF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762D63DA35AEE91F1F5BAFC /* Pods_ProjectF.framework */; };
 		2B7D1EEB1E4906CE00A35636 /* ProjectFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */; };
+		2B7D1EF11E49135500A35636 /* FitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */; };
+		2B7D1EF21E49135500A35636 /* FitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */; };
 		2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */; };
-		2BCF8BDA1E42AAFB00A15B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BD91E42AAFB00A15B5C /* ViewController.swift */; };
 		2BCF8BDD1E42AAFB00A15B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF8BDB1E42AAFB00A15B5C /* Main.storyboard */; };
 		2BCF8BE01E42AAFB00A15B5C /* ProjectF.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BDE1E42AAFB00A15B5C /* ProjectF.xcdatamodeld */; };
 		2BCF8BE21E42AAFB00A15B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF8BE11E42AAFB00A15B5C /* Assets.xcassets */; };
@@ -19,9 +20,10 @@
 
 /* Begin PBXFileReference section */
 		2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFViewController.swift; sourceTree = "<group>"; };
+		2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitTableViewCell.swift; sourceTree = "<group>"; };
+		2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitTableViewCell.xib; sourceTree = "<group>"; };
 		2BCF8BD41E42AAFB00A15B5C /* ProjectF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BCF8BD91E42AAFB00A15B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BCF8BDC1E42AAFB00A15B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BCF8BDF1E42AAFB00A15B5C /* ProjectF.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectF.xcdatamodel; sourceTree = "<group>"; };
 		2BCF8BE11E42AAFB00A15B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,8 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */,
-				2BCF8BD91E42AAFB00A15B5C /* ViewController.swift */,
 				2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */,
+				2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */,
+				2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */,
 				2BCF8BDB1E42AAFB00A15B5C /* Main.storyboard */,
 				2BCF8BE11E42AAFB00A15B5C /* Assets.xcassets */,
 				2BCF8BE31E42AAFB00A15B5C /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 				2BCF8BE51E42AAFB00A15B5C /* LaunchScreen.storyboard in Resources */,
 				2BCF8BE21E42AAFB00A15B5C /* Assets.xcassets in Resources */,
 				2BCF8BDD1E42AAFB00A15B5C /* Main.storyboard in Resources */,
+				2B7D1EF21E49135500A35636 /* FitTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,9 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BCF8BE01E42AAFB00A15B5C /* ProjectF.xcdatamodeld in Sources */,
-				2BCF8BDA1E42AAFB00A15B5C /* ViewController.swift in Sources */,
 				2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */,
 				2B7D1EEB1E4906CE00A35636 /* ProjectFViewController.swift in Sources */,
+				2B7D1EF11E49135500A35636 /* FitTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

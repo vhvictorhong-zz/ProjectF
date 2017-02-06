@@ -11,6 +11,8 @@ import ParseUI
 
 class ProjectFViewController: PFQueryTableViewController {
 
+    let cellIdentifier: String = "FitCell"
+    
     override init(style: UITableViewStyle, className: String!) {
         super.init(style: style, className: className)
         
@@ -19,6 +21,11 @@ class ProjectFViewController: PFQueryTableViewController {
         self.objectsPerPage = 25
         
         self.parseClassName = className
+        
+        self.tableView.rowHeight = 350
+        
+        // TODO: change this?
+        self.tableView.allowsSelection = false
     }
     
     required init(coder aDecoder:NSCoder)  
@@ -29,6 +36,9 @@ class ProjectFViewController: PFQueryTableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        tableView.register(UINib(nibName: "FitTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +48,7 @@ class ProjectFViewController: PFQueryTableViewController {
     
     override func queryForTable() -> PFQuery<PFObject> {
         
-        var query: PFQuery = PFQuery(className: self.parseClassName!)
+        let query: PFQuery = PFQuery(className: self.parseClassName!)
         
         if objects?.count == 0 {
             
@@ -56,19 +66,33 @@ class ProjectFViewController: PFQueryTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> PFTableViewCell? {
         
-        let cellIdentifier: String = "Cell"
-        
-        var cell: PFTableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? PFTableViewCell
+        var cell: FitTableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? FitTableViewCell
         
         if cell == nil {
             
-            cell = PFTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
+            cell = Bundle.main.loadNibNamed("FitTableViewCell", owner: self, options: nil)?[0] as? FitTableViewCell
             
         }
         
         if let pfObject = object {
-            cell?.textLabel?.text = pfObject["name"] as? String
+            cell?.fitNameLabel.text = pfObject["name"] as? String
+            
+            var votes: Int? = pfObject["votes"] as? Int
+            if votes == nil {
+                votes = 0
+            }
+            cell?.fitVoteLabel.text = "\(votes!) votes"
+            
+            cell?.fitImageView.image = placeholderImage
+            
+            let imageFile = pfObject["imageFile"] as? PFFile
+            cell?.fitImageView.file = imageFile
+            cell?.fitImageView.loadInBackground()
+            
         }
+        
+        
+        tableView.separatorStyle = .none
         
         return cell
         
