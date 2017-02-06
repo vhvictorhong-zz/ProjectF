@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "myAppId"
+            $0.clientKey = "myTestMasterKey"
+            $0.server = "http://victorparsetest.herokuapp.com/parse"
+        }
+        
+        Parse.initialize(with: configuration)
+        
+        let tableVC: ProjectFViewController = ProjectFViewController(className: "Food")
+        tableVC.title = "Fit"
+        
+        UINavigationBar.appearance().tintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        let navigationVC: UINavigationController = UINavigationController(rootViewController: tableVC)
+        
+        let frame = UIScreen.main.bounds
+        window = UIWindow(frame: frame)
+        
+        window?.rootViewController = navigationVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
