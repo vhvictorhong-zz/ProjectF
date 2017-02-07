@@ -13,7 +13,8 @@ class FitTableViewCell: PFTableViewCell {
 
     @IBOutlet weak var fitImageView: PFImageView!
     @IBOutlet weak var fitNameLabel: UILabel!
-    @IBOutlet weak var fitVoteLabel: UILabel!
+    @IBOutlet weak var fitLikesLabel: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

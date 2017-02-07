@@ -62,11 +62,11 @@ class ProjectFViewController: PFQueryTableViewController {
         if let pfObject = object {
             cell?.fitNameLabel.text = pfObject["name"] as? String
             
-            var votes: Int? = pfObject["votes"] as? Int
-            if votes == nil {
-                votes = 0
+            var likes: Int? = pfObject["likes"] as? Int
+            if likes == nil {
+                likes = 0
             }
-            cell?.fitVoteLabel.text = "\(votes!) votes"
+            cell?.fitLikesLabel.text = "\(likes!) likes"
             
             let imageFile = pfObject["imageFile"] as? PFFile
             cell?.fitImageView.file = imageFile
