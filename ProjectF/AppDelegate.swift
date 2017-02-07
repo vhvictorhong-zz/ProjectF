@@ -26,21 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(with: configuration)
         
-        let tableVC: ProjectFViewController = ProjectFViewController(className: "Food")
-        tableVC.title = "Fit"
-        
         UINavigationBar.appearance().tintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
         UINavigationBar.appearance().barTintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-        
-        let navigationVC: UINavigationController = UINavigationController(rootViewController: tableVC)
-        
-        let frame = UIScreen.main.bounds
-        window = UIWindow(frame: frame)
-        
-        window?.rootViewController = navigationVC
-        window?.makeKeyAndVisible()
         
         return true
     }

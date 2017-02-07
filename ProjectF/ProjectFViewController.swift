@@ -7,37 +7,22 @@
 //
 
 import UIKit
+import Parse
 import ParseUI
 
 class ProjectFViewController: PFQueryTableViewController {
 
     let cellIdentifier: String = "FitCell"
-    
-    override init(style: UITableViewStyle, className: String!) {
-        super.init(style: style, className: className)
-        
-        self.pullToRefreshEnabled = true
-        self.paginationEnabled = true
-        self.objectsPerPage = 25
-        
-        self.parseClassName = className
-        
-        self.tableView.rowHeight = 350
-        
-        // TODO: change this?
-        self.tableView.allowsSelection = false
-    }
-    
-    required init(coder aDecoder:NSCoder)  
-    {
-        fatalError("NSCoding not supported")  
-    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "Fit"
         
         tableView.register(UINib(nibName: "FitTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        
+        self.tableView.rowHeight = 350
         
     }
 
@@ -58,7 +43,7 @@ class ProjectFViewController: PFQueryTableViewController {
         
         //TODO: change string.
         
-        query.order(byAscending: "name")
+        query.order(byAscending: "createdAt")
         
         return query
         
@@ -82,8 +67,6 @@ class ProjectFViewController: PFQueryTableViewController {
                 votes = 0
             }
             cell?.fitVoteLabel.text = "\(votes!) votes"
-            
-            cell?.fitImageView.image = placeholderImage
             
             let imageFile = pfObject["imageFile"] as? PFFile
             cell?.fitImageView.file = imageFile
