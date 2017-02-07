@@ -33,7 +33,7 @@ class ProjectFViewController: PFQueryTableViewController {
     
     override func queryForTable() -> PFQuery<PFObject> {
         
-        let query: PFQuery = PFQuery(className: self.parseClassName!)
+        let query: PFQuery = PFQuery(className: "Food")
         
         if objects?.count == 0 {
             
