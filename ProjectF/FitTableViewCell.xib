@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,6 +34,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-7J-30P">
+                        <rect key="frame" x="25" y="320" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69u-QW-ftX">
                         <rect key="frame" x="15" y="5" width="33" height="15"/>
                         <constraints>
@@ -49,18 +56,21 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-7J-30P">
-                        <rect key="frame" x="25" y="320" width="29" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="likeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cSA-Xx-hNY">
+                        <rect key="frame" x="110.5" y="106" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="FdV-s8-dHN"/>
+                            <constraint firstAttribute="width" constant="100" id="O7m-Ia-gmn"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="mQI-zx-2Od" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2lb-wz-M4h"/>
                     <constraint firstItem="69u-QW-ftX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="BAb-sx-qOh"/>
+                    <constraint firstItem="cSA-Xx-hNY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Hw2-d0-eGb"/>
                     <constraint firstItem="69u-QW-ftX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KJc-qh-sVj"/>
                     <constraint firstItem="qnE-7J-30P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Th2-Rv-cmJ"/>
+                    <constraint firstItem="cSA-Xx-hNY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="98" id="UHi-1S-jcf"/>
                     <constraint firstItem="Dej-qT-KdH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="ejg-Ud-MFp"/>
                     <constraint firstAttribute="trailing" secondItem="mQI-zx-2Od" secondAttribute="trailing" constant="15" id="g6e-NX-opU"/>
                     <constraint firstItem="qnE-7J-30P" firstAttribute="top" secondItem="mQI-zx-2Od" secondAttribute="bottom" constant="5" id="gvF-Gn-rFU"/>
@@ -77,8 +87,12 @@
                 <outlet property="fitLikesLabel" destination="qnE-7J-30P" id="328-oo-w2g"/>
                 <outlet property="fitNameLabel" destination="Dej-qT-KdH" id="R75-9u-tPX"/>
                 <outlet property="fitUserLabel" destination="69u-QW-ftX" id="dkG-C4-RM0"/>
+                <outlet property="likeIconImageView" destination="cSA-Xx-hNY" id="kFI-P7-Asi"/>
             </connections>
             <point key="canvasLocation" x="36" y="80"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="likeIcon" width="512" height="512"/>
+    </resources>
 </document>

@@ -59,6 +59,8 @@ class ProjectFViewController: PFQueryTableViewController {
             
         }
         
+        cell?.parseObject = object
+        
         if let pfObject = object {
             
             cell?.fitUserLabel.setTitle(pfObject["username"] as? String, for: .normal)
@@ -70,6 +72,7 @@ class ProjectFViewController: PFQueryTableViewController {
             if likes == nil {
                 likes = 0
             }
+
             cell?.fitLikesLabel.text = "\(likes!) likes"
             
             let imageFile = pfObject["imageFile"] as? PFFile
