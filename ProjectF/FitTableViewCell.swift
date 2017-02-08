@@ -11,6 +11,8 @@ import ParseUI
 
 class FitTableViewCell: PFTableViewCell {
 
+    // MARK: - Properties
+    
     @IBOutlet weak var fitImageView: PFImageView!
     @IBOutlet weak var fitNameLabel: UILabel!
     @IBOutlet weak var fitLikesLabel: UILabel!
@@ -20,6 +22,8 @@ class FitTableViewCell: PFTableViewCell {
     
     var parseObject: PFObject?
 
+    // MARK: - View lifecycle
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,7 +36,8 @@ class FitTableViewCell: PFTableViewCell {
         
     }
     
-
+    // MARK: - Actions
+    
     func onDoubleTap(sender:AnyObject) {
         
         if(parseObject) != nil {

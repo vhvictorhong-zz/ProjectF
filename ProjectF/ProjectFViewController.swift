@@ -12,8 +12,12 @@ import ParseUI
 
 class ProjectFViewController: PFQueryTableViewController {
 
+    // MARK: - Properties
+    
     let cellIdentifier: String = "FitCell"
  
+    // MARK: - View lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,10 +30,21 @@ class ProjectFViewController: PFQueryTableViewController {
         
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if PFUser.current() == nil {
+            let loginVC = PFLogInViewController()
+            loginVC.delegate = self
+            
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Parse Setup
     
     override func queryForTable() -> PFQuery<PFObject> {
         
@@ -79,7 +94,6 @@ class ProjectFViewController: PFQueryTableViewController {
             cell?.fitImageView.file = imageFile
             cell?.fitImageView.loadInBackground()
             
-            
         }
         
         
@@ -100,3 +114,8 @@ class ProjectFViewController: PFQueryTableViewController {
 
 }
 
+// MARK: PFLogInViewControllerDelegate
+
+extension ProjectFViewController: PFLogInViewControllerDelegate {
+    
+}

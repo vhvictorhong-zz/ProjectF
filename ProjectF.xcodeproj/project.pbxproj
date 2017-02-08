@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1567521F6946B7B2864D8031 /* Pods_ProjectF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762D63DA35AEE91F1F5BAFC /* Pods_ProjectF.framework */; };
-		2B47C5791E4A3925005E0AF2 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47C5781E4A3925005E0AF2 /* GalleryViewController.swift */; };
 		2B47C59E1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47C59D1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift */; };
 		2B47C5A01E4A72F3005E0AF2 /* PlusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B47C59F1E4A72F3005E0AF2 /* PlusButton.png */; };
 		2B47C5A21E4A76B7005E0AF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47C5A11E4A76B7005E0AF2 /* ProfileViewController.swift */; };
@@ -37,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B47C5781E4A3925005E0AF2 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		2B47C59D1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		2B47C59F1E4A72F3005E0AF2 /* PlusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusButton.png; sourceTree = "<group>"; };
 		2B47C5A11E4A76B7005E0AF2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */,
 				2B47C5A31E4A7D15005E0AF2 /* ShareDetailViewController.swift */,
 				2B47C5A11E4A76B7005E0AF2 /* ProfileViewController.swift */,
-				2B47C5781E4A3925005E0AF2 /* GalleryViewController.swift */,
 				2BCF8BDB1E42AAFB00A15B5C /* Main.storyboard */,
 				2BC7A3461E4AD67100EF0EEC /* Fusuma */,
 				2B47C59F1E4A72F3005E0AF2 /* PlusButton.png */,
@@ -309,7 +306,6 @@
 				2BCF8BE01E42AAFB00A15B5C /* ProjectF.xcdatamodeld in Sources */,
 				2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */,
 				2B47C59E1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift in Sources */,
-				2B47C5791E4A3925005E0AF2 /* GalleryViewController.swift in Sources */,
 				2BC7A3521E4AD67100EF0EEC /* FSVideoCameraView.swift in Sources */,
 				2BC7A34C1E4AD67100EF0EEC /* FSCameraView.swift in Sources */,
 				2B47C5A21E4A76B7005E0AF2 /* ProfileViewController.swift in Sources */,
