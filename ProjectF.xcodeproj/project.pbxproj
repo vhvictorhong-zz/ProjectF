@@ -12,9 +12,24 @@
 		2B47C59E1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47C59D1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift */; };
 		2B47C5A01E4A72F3005E0AF2 /* PlusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B47C59F1E4A72F3005E0AF2 /* PlusButton.png */; };
 		2B47C5A21E4A76B7005E0AF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47C5A11E4A76B7005E0AF2 /* ProfileViewController.swift */; };
+		2B47C5A41E4A7D15005E0AF2 /* ShareDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B47C5A31E4A7D15005E0AF2 /* ShareDetailViewController.swift */; };
 		2B7D1EEB1E4906CE00A35636 /* ProjectFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */; };
 		2B7D1EF11E49135500A35636 /* FitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */; };
 		2B7D1EF21E49135500A35636 /* FitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */; };
+		2BC7A3281E4A824700EF0EEC /* FSAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A31B1E4A824600EF0EEC /* FSAlbumView.swift */; };
+		2BC7A3291E4A824700EF0EEC /* FSAlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A31C1E4A824600EF0EEC /* FSAlbumView.xib */; };
+		2BC7A32A1E4A824700EF0EEC /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A31D1E4A824600EF0EEC /* FSAlbumViewCell.swift */; };
+		2BC7A32B1E4A824700EF0EEC /* FSAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A31E1E4A824600EF0EEC /* FSAlbumViewCell.xib */; };
+		2BC7A32C1E4A824700EF0EEC /* FSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A31F1E4A824600EF0EEC /* FSCameraView.swift */; };
+		2BC7A32D1E4A824700EF0EEC /* FSCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3201E4A824600EF0EEC /* FSCameraView.xib */; };
+		2BC7A32E1E4A824700EF0EEC /* FSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3211E4A824600EF0EEC /* FSConstants.swift */; };
+		2BC7A32F1E4A824700EF0EEC /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3221E4A824600EF0EEC /* FSImageCropView.swift */; };
+		2BC7A3301E4A824700EF0EEC /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3231E4A824600EF0EEC /* FSVideoCameraView.swift */; };
+		2BC7A3311E4A824700EF0EEC /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3241E4A824600EF0EEC /* FSVideoCameraView.xib */; };
+		2BC7A3321E4A824700EF0EEC /* FusumaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3251E4A824600EF0EEC /* FusumaViewController.swift */; };
+		2BC7A3331E4A824700EF0EEC /* FusumaViewController.swift.orig in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3261E4A824700EF0EEC /* FusumaViewController.swift.orig */; };
+		2BC7A3341E4A824700EF0EEC /* FusumaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3271E4A824700EF0EEC /* FusumaViewController.xib */; };
+		2BC7A3381E4A827200EF0EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3371E4A827200EF0EEC /* Assets.xcassets */; };
 		2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */; };
 		2BCF8BDD1E42AAFB00A15B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF8BDB1E42AAFB00A15B5C /* Main.storyboard */; };
 		2BCF8BE01E42AAFB00A15B5C /* ProjectF.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BDE1E42AAFB00A15B5C /* ProjectF.xcdatamodeld */; };
@@ -27,9 +42,24 @@
 		2B47C59D1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		2B47C59F1E4A72F3005E0AF2 /* PlusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusButton.png; sourceTree = "<group>"; };
 		2B47C5A11E4A76B7005E0AF2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2B47C5A31E4A7D15005E0AF2 /* ShareDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareDetailViewController.swift; sourceTree = "<group>"; };
 		2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFViewController.swift; sourceTree = "<group>"; };
 		2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitTableViewCell.swift; sourceTree = "<group>"; };
 		2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitTableViewCell.xib; sourceTree = "<group>"; };
+		2BC7A31B1E4A824600EF0EEC /* FSAlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSAlbumView.swift; path = Sources/FSAlbumView.swift; sourceTree = "<group>"; };
+		2BC7A31C1E4A824600EF0EEC /* FSAlbumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSAlbumView.xib; path = Sources/FSAlbumView.xib; sourceTree = "<group>"; };
+		2BC7A31D1E4A824600EF0EEC /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSAlbumViewCell.swift; path = Sources/FSAlbumViewCell.swift; sourceTree = "<group>"; };
+		2BC7A31E1E4A824600EF0EEC /* FSAlbumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSAlbumViewCell.xib; path = Sources/FSAlbumViewCell.xib; sourceTree = "<group>"; };
+		2BC7A31F1E4A824600EF0EEC /* FSCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSCameraView.swift; path = Sources/FSCameraView.swift; sourceTree = "<group>"; };
+		2BC7A3201E4A824600EF0EEC /* FSCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSCameraView.xib; path = Sources/FSCameraView.xib; sourceTree = "<group>"; };
+		2BC7A3211E4A824600EF0EEC /* FSConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSConstants.swift; path = Sources/FSConstants.swift; sourceTree = "<group>"; };
+		2BC7A3221E4A824600EF0EEC /* FSImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSImageCropView.swift; path = Sources/FSImageCropView.swift; sourceTree = "<group>"; };
+		2BC7A3231E4A824600EF0EEC /* FSVideoCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSVideoCameraView.swift; path = Sources/FSVideoCameraView.swift; sourceTree = "<group>"; };
+		2BC7A3241E4A824600EF0EEC /* FSVideoCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSVideoCameraView.xib; path = Sources/FSVideoCameraView.xib; sourceTree = "<group>"; };
+		2BC7A3251E4A824600EF0EEC /* FusumaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FusumaViewController.swift; path = Sources/FusumaViewController.swift; sourceTree = "<group>"; };
+		2BC7A3261E4A824700EF0EEC /* FusumaViewController.swift.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FusumaViewController.swift.orig; path = Sources/FusumaViewController.swift.orig; sourceTree = "<group>"; };
+		2BC7A3271E4A824700EF0EEC /* FusumaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FusumaViewController.xib; path = Sources/FusumaViewController.xib; sourceTree = "<group>"; };
+		2BC7A3371E4A827200EF0EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
 		2BCF8BD41E42AAFB00A15B5C /* ProjectF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCF8BDC1E42AAFB00A15B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +84,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BC7A3361E4A826700EF0EEC /* Fusuma */ = {
+			isa = PBXGroup;
+			children = (
+				2BC7A3371E4A827200EF0EEC /* Assets.xcassets */,
+				2BC7A31B1E4A824600EF0EEC /* FSAlbumView.swift */,
+				2BC7A31C1E4A824600EF0EEC /* FSAlbumView.xib */,
+				2BC7A31D1E4A824600EF0EEC /* FSAlbumViewCell.swift */,
+				2BC7A31E1E4A824600EF0EEC /* FSAlbumViewCell.xib */,
+				2BC7A31F1E4A824600EF0EEC /* FSCameraView.swift */,
+				2BC7A3201E4A824600EF0EEC /* FSCameraView.xib */,
+				2BC7A3211E4A824600EF0EEC /* FSConstants.swift */,
+				2BC7A3221E4A824600EF0EEC /* FSImageCropView.swift */,
+				2BC7A3231E4A824600EF0EEC /* FSVideoCameraView.swift */,
+				2BC7A3241E4A824600EF0EEC /* FSVideoCameraView.xib */,
+				2BC7A3251E4A824600EF0EEC /* FusumaViewController.swift */,
+				2BC7A3261E4A824700EF0EEC /* FusumaViewController.swift.orig */,
+				2BC7A3271E4A824700EF0EEC /* FusumaViewController.xib */,
+			);
+			name = Fusuma;
+			sourceTree = "<group>";
+		};
 		2BCF8BCB1E42AAFB00A15B5C = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +131,11 @@
 				2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */,
 				2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */,
 				2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */,
+				2B47C5A31E4A7D15005E0AF2 /* ShareDetailViewController.swift */,
 				2B47C5A11E4A76B7005E0AF2 /* ProfileViewController.swift */,
 				2B47C5781E4A3925005E0AF2 /* GalleryViewController.swift */,
 				2BCF8BDB1E42AAFB00A15B5C /* Main.storyboard */,
+				2BC7A3361E4A826700EF0EEC /* Fusuma */,
 				2B47C59F1E4A72F3005E0AF2 /* PlusButton.png */,
 				2BCF8BE11E42AAFB00A15B5C /* Assets.xcassets */,
 				2BCF8BE31E42AAFB00A15B5C /* LaunchScreen.storyboard */,
@@ -173,8 +226,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC7A3311E4A824700EF0EEC /* FSVideoCameraView.xib in Resources */,
+				2BC7A3341E4A824700EF0EEC /* FusumaViewController.xib in Resources */,
+				2BC7A32D1E4A824700EF0EEC /* FSCameraView.xib in Resources */,
 				2BCF8BE51E42AAFB00A15B5C /* LaunchScreen.storyboard in Resources */,
+				2BC7A32B1E4A824700EF0EEC /* FSAlbumViewCell.xib in Resources */,
 				2BCF8BE21E42AAFB00A15B5C /* Assets.xcassets in Resources */,
+				2BC7A3381E4A827200EF0EEC /* Assets.xcassets in Resources */,
+				2BC7A3291E4A824700EF0EEC /* FSAlbumView.xib in Resources */,
+				2BC7A3331E4A824700EF0EEC /* FusumaViewController.swift.orig in Resources */,
 				2BCF8BDD1E42AAFB00A15B5C /* Main.storyboard in Resources */,
 				2B47C5A01E4A72F3005E0AF2 /* PlusButton.png in Resources */,
 				2B7D1EF21E49135500A35636 /* FitTableViewCell.xib in Resources */,
@@ -253,9 +313,17 @@
 				2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */,
 				2B47C59E1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift in Sources */,
 				2B47C5791E4A3925005E0AF2 /* GalleryViewController.swift in Sources */,
+				2BC7A32C1E4A824700EF0EEC /* FSCameraView.swift in Sources */,
 				2B47C5A21E4A76B7005E0AF2 /* ProfileViewController.swift in Sources */,
 				2B7D1EEB1E4906CE00A35636 /* ProjectFViewController.swift in Sources */,
 				2B7D1EF11E49135500A35636 /* FitTableViewCell.swift in Sources */,
+				2BC7A3301E4A824700EF0EEC /* FSVideoCameraView.swift in Sources */,
+				2BC7A3321E4A824700EF0EEC /* FusumaViewController.swift in Sources */,
+				2BC7A3281E4A824700EF0EEC /* FSAlbumView.swift in Sources */,
+				2B47C5A41E4A7D15005E0AF2 /* ShareDetailViewController.swift in Sources */,
+				2BC7A32E1E4A824700EF0EEC /* FSConstants.swift in Sources */,
+				2BC7A32F1E4A824700EF0EEC /* FSImageCropView.swift in Sources */,
+				2BC7A32A1E4A824700EF0EEC /* FSAlbumViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -64,7 +64,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZQ-iN-8UP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="789"/>
+            <point key="canvasLocation" x="1900" y="747"/>
+        </scene>
+        <!--Share Detail View Controller-->
+        <scene sceneID="LOr-KI-GVn">
+            <objects>
+                <viewController restorationIdentifier="ShareDetailViewController" storyboardIdentifier="ShareDetailViewController" id="z5E-Of-FsM" customClass="ShareDetailViewController" customModule="ProjectF" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2SY-OJ-1Ij"/>
+                        <viewControllerLayoutGuide type="bottom" id="GF9-G9-FQ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ou-04-4n6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mAV-9g-KR6">
+                                <rect key="frame" x="15" y="74" width="345" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="V3w-u0-3Rx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTa-rt-9Lc">
+                                <rect key="frame" x="320" y="26" width="47" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vrc-aG-cro"/>
+                                </constraints>
+                                <state key="normal" title="Share"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Caption" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38D-dv-nQW">
+                                <rect key="frame" x="15" y="372" width="345" height="287"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GF9-G9-FQ0" firstAttribute="top" secondItem="38D-dv-nQW" secondAttribute="bottom" constant="8" id="0T1-bh-hSu"/>
+                            <constraint firstAttribute="trailing" secondItem="38D-dv-nQW" secondAttribute="trailing" constant="15" id="ENV-KE-bim"/>
+                            <constraint firstItem="mAV-9g-KR6" firstAttribute="leading" secondItem="1ou-04-4n6" secondAttribute="leading" constant="15" id="Ec7-xj-nOa"/>
+                            <constraint firstAttribute="trailing" secondItem="mAV-9g-KR6" secondAttribute="trailing" constant="15" id="IZq-QS-ZZA"/>
+                            <constraint firstItem="38D-dv-nQW" firstAttribute="leading" secondItem="1ou-04-4n6" secondAttribute="leading" constant="15" id="MuS-Hx-SiE"/>
+                            <constraint firstAttribute="trailing" secondItem="HTa-rt-9Lc" secondAttribute="trailing" constant="8" id="Ngk-0z-vlK"/>
+                            <constraint firstItem="mAV-9g-KR6" firstAttribute="top" secondItem="HTa-rt-9Lc" secondAttribute="bottom" constant="8" id="eCd-7T-6id"/>
+                            <constraint firstItem="HTa-rt-9Lc" firstAttribute="top" secondItem="2SY-OJ-1Ij" secondAttribute="bottom" constant="6" id="f4O-hm-ep3"/>
+                            <constraint firstItem="38D-dv-nQW" firstAttribute="top" secondItem="mAV-9g-KR6" secondAttribute="bottom" constant="8" id="n3k-Rk-nXR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="captionTextField" destination="38D-dv-nQW" id="xJ1-CD-hwf"/>
+                        <outlet property="imageView" destination="mAV-9g-KR6" id="VpQ-zX-Ane"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQi-dT-Q3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2649" y="746"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="X1v-SK-Za3">

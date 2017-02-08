@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  ShareDetailViewController.swift
 //  ProjectF
 //
 //  Created by Victor Hong on 07/02/2017.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ShareDetailViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var captionTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,3 +37,4 @@ class ProfileViewController: UIViewController {
     */
 
 }
+
