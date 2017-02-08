@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ShareDetailViewController: UIViewController {
 
@@ -25,6 +26,13 @@ class ShareDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func shareAction(_ sender: UIButton) {
+        
+        let testObj = PFObject(className: "testObj")
+        testObj["foo"] = "bar"
+        testObj.saveInBackground()
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -14,8 +14,9 @@ class FitTableViewCell: PFTableViewCell {
     @IBOutlet weak var fitImageView: PFImageView!
     @IBOutlet weak var fitNameLabel: UILabel!
     @IBOutlet weak var fitLikesLabel: UILabel!
+    @IBOutlet weak var fitUserLabel: UIButton!
+    @IBOutlet weak var fitCaptionLabel: UILabel!
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -22,7 +22,7 @@ class ProjectFViewController: PFQueryTableViewController {
         
         tableView.register(UINib(nibName: "FitTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
-        self.tableView.rowHeight = 350
+        self.tableView.rowHeight = 380
         
     }
 
@@ -60,7 +60,11 @@ class ProjectFViewController: PFQueryTableViewController {
         }
         
         if let pfObject = object {
-            cell?.fitNameLabel.text = pfObject["name"] as? String
+            
+            cell?.fitUserLabel.setTitle(pfObject["username"] as? String, for: .normal)
+            
+            cell?.fitNameLabel.text = pfObject["username"] as? String
+            cell?.fitCaptionLabel.text = pfObject["caption"] as? String
             
             var likes: Int? = pfObject["likes"] as? Int
             if likes == nil {
@@ -71,6 +75,7 @@ class ProjectFViewController: PFQueryTableViewController {
             let imageFile = pfObject["imageFile"] as? PFFile
             cell?.fitImageView.file = imageFile
             cell?.fitImageView.loadInBackground()
+            
             
         }
         
