@@ -28,6 +28,8 @@
 		2BC7A3511E4AD67100EF0EEC /* FusumaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3431E4AD67100EF0EEC /* FusumaViewController.xib */; };
 		2BC7A3521E4AD67100EF0EEC /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3441E4AD67100EF0EEC /* FSVideoCameraView.swift */; };
 		2BC7A3531E4AD67100EF0EEC /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC7A3451E4AD67100EF0EEC /* FSVideoCameraView.xib */; };
+		2BC7A3761E4C00AC00EF0EEC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3751E4C00AC00EF0EEC /* LoginViewController.swift */; };
+		2BC7A3791E4C03E600EF0EEC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7A3781E4C03E600EF0EEC /* SignUpViewController.swift */; };
 		2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */; };
 		2BCF8BDD1E42AAFB00A15B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF8BDB1E42AAFB00A15B5C /* Main.storyboard */; };
 		2BCF8BE01E42AAFB00A15B5C /* ProjectF.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF8BDE1E42AAFB00A15B5C /* ProjectF.xcdatamodeld */; };
@@ -56,6 +58,9 @@
 		2BC7A3431E4AD67100EF0EEC /* FusumaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FusumaViewController.xib; sourceTree = "<group>"; };
 		2BC7A3441E4AD67100EF0EEC /* FSVideoCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVideoCameraView.swift; sourceTree = "<group>"; };
 		2BC7A3451E4AD67100EF0EEC /* FSVideoCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSVideoCameraView.xib; sourceTree = "<group>"; };
+		2BC7A3751E4C00AC00EF0EEC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2BC7A3771E4C024300EF0EEC /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		2BC7A3781E4C03E600EF0EEC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2BCF8BD41E42AAFB00A15B5C /* ProjectF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCF8BDC1E42AAFB00A15B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,8 +127,11 @@
 		2BCF8BD61E42AAFB00A15B5C /* ProjectF */ = {
 			isa = PBXGroup;
 			children = (
+				2BC7A3771E4C024300EF0EEC /* Pacifico.ttf */,
 				2BCF8BD71E42AAFB00A15B5C /* AppDelegate.swift */,
 				2B47C59D1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift */,
+				2BC7A3751E4C00AC00EF0EEC /* LoginViewController.swift */,
+				2BC7A3781E4C03E600EF0EEC /* SignUpViewController.swift */,
 				2B7D1EEA1E4906CE00A35636 /* ProjectFViewController.swift */,
 				2B7D1EEF1E49135500A35636 /* FitTableViewCell.swift */,
 				2B7D1EF01E49135500A35636 /* FitTableViewCell.xib */,
@@ -306,12 +314,14 @@
 				2BCF8BE01E42AAFB00A15B5C /* ProjectF.xcdatamodeld in Sources */,
 				2BCF8BD81E42AAFB00A15B5C /* AppDelegate.swift in Sources */,
 				2B47C59E1E4A6F4F005E0AF2 /* CustomTabBarViewController.swift in Sources */,
+				2BC7A3761E4C00AC00EF0EEC /* LoginViewController.swift in Sources */,
 				2BC7A3521E4AD67100EF0EEC /* FSVideoCameraView.swift in Sources */,
 				2BC7A34C1E4AD67100EF0EEC /* FSCameraView.swift in Sources */,
 				2B47C5A21E4A76B7005E0AF2 /* ProfileViewController.swift in Sources */,
 				2B7D1EEB1E4906CE00A35636 /* ProjectFViewController.swift in Sources */,
 				2B7D1EF11E49135500A35636 /* FitTableViewCell.swift in Sources */,
 				2BC7A3481E4AD67100EF0EEC /* FSAlbumView.swift in Sources */,
+				2BC7A3791E4C03E600EF0EEC /* SignUpViewController.swift in Sources */,
 				2B47C5A41E4A7D15005E0AF2 /* ShareDetailViewController.swift in Sources */,
 				2BC7A34E1E4AD67100EF0EEC /* FSConstants.swift in Sources */,
 				2BC7A34F1E4AD67100EF0EEC /* FSImageCropView.swift in Sources */,

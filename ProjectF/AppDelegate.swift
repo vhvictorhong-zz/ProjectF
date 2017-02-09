@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import Parse
+import ParseTwitterUtils
+import ParseFacebookUtilsV4
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,12 +28,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(with: configuration)
         
+        PFTwitterUtils.initialize(withConsumerKey: "5cQV2Xfo5Syv9AIbmdqYBfsAm", consumerSecret: "IFVlPUU96lpo0T3NusZ2TYm8j0jgiWNrglN5Bn0Dmn299ruDaQ")
+        PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
+        
 //        UINavigationBar.appearance().tintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
 //        UINavigationBar.appearance().barTintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
 //        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
 //        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -50,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

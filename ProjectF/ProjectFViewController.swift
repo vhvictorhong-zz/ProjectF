@@ -25,6 +25,7 @@ class ProjectFViewController: PFQueryTableViewController {
         self.title = "Fit"
         
         tableView.register(UINib(nibName: "FitTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        tableView.showsVerticalScrollIndicator = false
         
         self.tableView.rowHeight = 380
         
@@ -36,7 +37,10 @@ class ProjectFViewController: PFQueryTableViewController {
         if PFUser.current() == nil {
             let loginVC = PFLogInViewController()
             loginVC.delegate = self
-            
+            loginVC.fields = [.usernameAndPassword, .logInButton, .passwordForgotten, .signUpButton, .facebook, .twitter]
+            loginVC.emailAsUsername = true
+            loginVC.signUpController?.delegate = self
+            present(loginVC, animated: false, completion: nil)
         }
     }
     override func didReceiveMemoryWarning() {
@@ -114,8 +118,20 @@ class ProjectFViewController: PFQueryTableViewController {
 
 }
 
-// MARK: PFLogInViewControllerDelegate
+// MARK: PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate
 
-extension ProjectFViewController: PFLogInViewControllerDelegate {
+extension ProjectFViewController: PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
+    func log(_ logInController: PFLogInViewController, didLogIn user: PFUser) {
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func signUpViewController(_ signUpController: PFSignUpViewController, didSignUp user: PFUser) {
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
 }
+
