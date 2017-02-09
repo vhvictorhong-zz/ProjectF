@@ -31,11 +31,11 @@ class ProjectFViewController: PFQueryTableViewController {
         
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         if PFUser.current() == nil {
-            let loginVC = PFLogInViewController()
+            let loginVC = LoginViewController()
             loginVC.delegate = self
             loginVC.fields = [.usernameAndPassword, .logInButton, .passwordForgotten, .signUpButton, .facebook, .twitter]
             loginVC.emailAsUsername = true
